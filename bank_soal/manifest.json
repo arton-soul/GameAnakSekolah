@@ -1,0 +1,13 @@
+{
+  "content_version": 1,
+  "app_min_version": 1,
+  "last_updated": "2026-10-11",
+  "description": "Bank Soal Resmi EduQuest SD, SMP, SMA & Ruang Ujian Sekolah",
+  "total_questions": 600,
+  "endpoints": {
+    "sd": "bank_soal/questions_sd.json",
+    "smp": "bank_soal/questions_smp.json",
+    "sma": "bank_soal/questions_sma.json",
+    "exam": "bank_soal/questions_exam.json"
+  }
+}

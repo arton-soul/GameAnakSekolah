@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EduQuest</string>
+    <string name="tagline_belajar">Belajar.</string>
+    <string name="tagline_bermain">Bermain.</string>
+    <string name="tagline_berkembang">Berkembang.</string>
+    <string name="btn_mulai">Mulai</string>
+</resources>
