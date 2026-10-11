@@ -1,4 +1,4 @@
-﻿# 📱 Google Play Store Listing — EduQuest: Game Petualangan Belajar & Ujian (SD • SMP • SMA)
+# 📱 Google Play Store Listing — EduQuest: Game Petualangan Belajar & Ujian (SD • SMP • SMA)
 
 Dokumen ini berisi seluruh materi teks listing, metadata pendaftaran, panduan pengisian Google Play Console, dan spesifikasi aset visual yang telah disiapkan untuk aplikasi **Game Anak Sekolah (EduQuest)**.
 
@@ -110,9 +110,10 @@ Semua aset visual resolusi tinggi telah digenerate dan tersimpan pada folder `pl
 ## 🛡️ 4. Panduan Pengisian Kuesioner Play Console
 
 ### A. Kebijakan Privasi (Privacy Policy)
-- Masukkan URL dokumen privasi yang telah dibuat di repository Anda:  
-  `https://github.com/[username]/GameAnakSekolah/blob/main/PRIVACY_POLICY.md` (atau link hosting web Anda).
-- Konten privasi menegaskan: *Aplikasi bersifat 100% offline-first, tidak mengumpulkan data pribadi, tidak menggunakan tracker/SDK pihak ketiga, dan sepenuhnya aman untuk anak-anak.*
+- Masukkan URL dokumen privasi resmi pada repository GitHub:  
+  `https://raw.githubusercontent.com/arton-soul/GameAnakSekolah/main/PRIVACY_POLICY.md`  
+  *(Atau URL postingan blog / website Anda jika menggunakan Blogger).*
+- Konten privasi menegaskan: *Aplikasi bersifat aman untuk anak (COPPA & GDPR-K compliant), tidak mengumpulkan informasi identitas pribadi (PII seperti nama asli, email, nomor HP, kontak, atau lokasi), tidak menggunakan tracker periklanan, dan seluruh data tersimpan aman.*
 
 ### B. Akses Aplikasi (App Access)
 - Pilih: **"Semua fungsionalitas tersedia tanpa batasan khusus"** (All functionality is available without special access).
@@ -137,21 +138,79 @@ Semua aset visual resolusi tinggi telah digenerate dan tersimpan pada folder `pl
 - Kebijakan Keluarga (Designed for Families): **Ya, aplikasi memenuhi standar Program Keluarga Google Play**.
 
 ### F. Keamanan Data (Data Safety Section)
-- Apakah aplikasi mengumpulkan atau membagikan data pengguna? **TIDAK (No)**.
-- Seluruh data disimpan secara lokal pada database SQLite perangkat pengguna.
+- **Pengumpulan Data**:
+  - Apakah aplikasi mengumpulkan data pengguna? Pilih **Ya (Yes)** hanya jika mengaktifkan Papan Peringkat Online (Leaderboard).
+  - Jenis data: **Aktivitas Aplikasi (App Activity) -> Interaksi Aplikasi / Skor Game (Game Score & Avatar Nickname)**.
+  - Tujuan: **Fungsionalitas Aplikasi (App Functionality)** untuk menampilkan peringkat juara.
+  - Apakah data ditautkan dengan identitas pengguna? **TIDAK (No / Not linked to user identity)**.
+  - Apakah data dienkripsi dalam transit? **Ya, semua transmisi data menggunakan protokol HTTPS terenkripsi**.
+  - Apakah pengguna dapat meminta penghapusan data? **Ya**.
+- *Catatan: Jika bermain dalam mode offline, aplikasi tidak mengirim data apapun ke luar perangkat.*
 
 ---
 
-## 📋 5. Catatan Rilis Versi 1.0 (What's New in this Release)
+## 📋 5. Catatan Rilis (Release Notes / What's New)
 
-Teks untuk kolom **Release Notes** saat membuat rilis di Google Play Console:
+### 🚀 Versi 1.0.2 (Version Code: 3) — [RILIS TERBARU]
+*Gunakan teks di bawah ini saat membuat rilis di Google Play Console (maksimal 500 karakter per bahasa).*
+
+#### Opsi 1: Format Teks Bahasa Indonesia (id-ID) — Siap Salin
 ```text
-🎉 Rilis Perdana EduQuest v1.0.0:
-• Petualangan belajar interaktif untuk jenjang SD (Kelas 1-6), SMP (Kelas 7-9), dan SMA (Kelas 10-12).
-• Lebih dari 600 Bank Soal kurikulum nasional (Matematika, IPA/Sains, IPS/Soshum, Bahasa Indonesia, & Logika).
+🎉 Apa yang Baru di Versi 1.0.2:
+• 🏆 Papan Peringkat Juara: Lihat ranking & prestasi belajar SD, SMP, SMA se-Indonesia.
+• 🔄 Update Soal Otomatis: Dapatkan paket soal baru secara online tanpa harus update aplikasi!
+• ⚖️ Penyesuaian Hadiah: Hadiah XP & koin saat mengulang quest disesuaikan agar lebih menantang.
+• 🏅 Perbaikan Tampilan Medali & Piala: Tampilan progres koleksi kini lebih akurat & rapi.
+• ⚡ Peningkatan performa, animasi lebih halus, dan dukungan penuh Android 16.
+```
+
+#### Opsi 2: Format Teks Bahasa Inggris (en-US) — Siap Salin
+```text
+🎉 What's New in v1.0.2:
+• 🏆 National Leaderboard: Compete and view rankings for Elementary, Middle & High School students.
+• 🔄 Automatic Question Updates: Sync new question banks online without updating the app!
+• ⚖️ Quest Reward Balancing: Replay quest rewards adjusted for fair and challenging progression.
+• 🏅 Trophy & Medal Progress Fix: Clean, accurate achievement progress display.
+• ⚡ Performance improvements, smoother animations, and full Android 16 support.
+```
+
+#### Opsi 3: Format Multi-Bahasa Play Console XML (Langsung Tempel ke Kolom Release Notes)
+```xml
+<id-ID>
+🎉 Apa yang Baru di Versi 1.0.2:
+• 🏆 Papan Peringkat Juara: Lihat ranking & prestasi belajar SD, SMP, SMA se-Indonesia.
+• 🔄 Update Soal Otomatis: Dapatkan paket soal baru secara online tanpa harus update aplikasi!
+• ⚖️ Penyesuaian Hadiah: Hadiah XP & koin saat mengulang quest disesuaikan agar lebih menantang.
+• 🏅 Perbaikan Tampilan Medali & Piala: Tampilan progres koleksi kini lebih akurat & rapi.
+• ⚡ Peningkatan performa, animasi lebih halus, dan dukungan penuh Android 16.
+</id-ID>
+<en-US>
+🎉 What's New in v1.0.2:
+• 🏆 National Leaderboard: Compete and view rankings for Elementary, Middle & High School students.
+• 🔄 Automatic Question Updates: Sync new question banks online without updating the app!
+• ⚖️ Quest Reward Balancing: Replay quest rewards adjusted for fair and challenging progression.
+• 🏅 Trophy & Medal Progress Fix: Clean, accurate achievement progress display.
+• ⚡ Performance improvements, smoother animations, and full Android 16 support.
+</en-US>
+```
+
+---
+
+### 📜 Riwayat Rilis Sebelumnya (Changelog Archive)
+
+#### Versi 1.0.1 (Version Code: 2)
+```text
+• Peningkatan standar sistem ke Target SDK 36 (Android 16 Ready).
+• Perbaikan estetika tombol kuis dan ruang ujian sekolah pada orientasi portrait.
+• Variasi pengacakan jawaban dinamis pada soal SMA dan Ujian Sekolah.
+• Optimasi performa dan perbaikan visual karakter.
+```
+
+#### Versi 1.0.0 (Version Code: 1)
+```text
+• Rilis perdana EduQuest: Petualangan Belajar SD (1-6), SMP (7-9), dan SMA (10-12).
+• Lebih dari 600 Bank Soal kurikulum nasional (Matematika, IPA, IPS, Bahasa Indonesia, & Logika).
 • Ruang Ujian Sekolah dengan simulasi tryout berbatas waktu dan rapor nilai otomatis.
-• Fitur pengacakan jawaban dinamis anti-hafalan pola kuis.
-• Gamifikasi seru: Karakter avatar, XP, Koin, Level, Misi Harian, dan Ensiklopedia Kartu Pengetahuan.
-• 100% Offline, hemat kuota, bebas iklan, dan ramah privasi anak.
-• Mendukung standar Android 16 terbaru (Target SDK 36).
+• Gamifikasi seru: Karakter avatar, XP, Koin, Level, Misi Harian, dan Ensiklopedia Kartu.
+• 100% Offline-first, hemat kuota, bebas iklan, dan ramah privasi anak.
 ```

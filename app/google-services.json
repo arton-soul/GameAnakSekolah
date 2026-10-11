@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737535899802",
+    "project_id": "gameanaksekolah",
+    "storage_bucket": "gameanaksekolah.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737535899802:android:116e6a6e35a673ca2b4723",
+        "android_client_info": {
+          "package_name": "com.gameanaksekolah.sdsmpsma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD36gVgQQw4c4WjT-G-VI9J1fF1uXoGS-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
